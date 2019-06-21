@@ -154,6 +154,7 @@ class Icon extends StatelessWidget {
     Widget iconWidget = RichText(
       overflow: TextOverflow.visible, // Never clip.
       textDirection: textDirection, // Since we already fetched it for the assert...
+      textAlign: TextAlign.center,
       text: TextSpan(
         text: String.fromCharCode(icon.codePoint),
         style: TextStyle(
